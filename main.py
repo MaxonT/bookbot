@@ -30,15 +30,15 @@ def print_report(word_count, sorted_chars, book_path):
     print("============= END ===============")
 
 def main():
-    # ✅ 1. 检查有没有传入命令行参数（book path）
+    
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
 
-    # ✅ 2. 读取用户传入的路径
+    
     book_path = sys.argv[1]
 
-    # ✅ 3. 照常运行，只是换成传入的路径
+    
     text = get_book_text(book_path)
     word_count = count_words(text)
     char_counts = count_characters(text)
